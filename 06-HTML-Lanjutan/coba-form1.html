@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba Element Form</title>
+</head>
+<body>
+
+    <h1>Contoh elemen-elemen form pada HTML</h1>
+
+   <form action="">
+
+        <!-- cara penulisan code ini dimana label dalam satu baris sejajar: harus pakai for dan id sehingga antara labal dan input itu connect to each other, dan ketika kita klik kotaknya warnanya berubah itu artinya dia connect -->
+
+        <label for="nama">Nama:</label>
+        <input type="text" name="nama" placeholder="Masukkan nama" id="nama">
+
+        <br><br>
+
+        <!-- cara penulisan code ini dimana label membungkus elemen input: tidak wajib pakai for dan id -->
+
+        <label>Nama:
+            <input type="text" name="nama">
+        </label>
+
+        <br><br>
+
+         <!-- cara penulisan code ini dimana label membungkus elemen input: tidak wajib pakai for dan id, tapi sebaiknya pakai for dan id-->
+
+        <label for="nama">Nama:
+            <input type="text" name="nama" id="nama">
+        </label>
+
+        <br><br>
+
+     <label for="password">Password:</label>
+     <input type="password" name="password" id="password" placeholder="Masukkan password">
+
+     <br><br>
+
+     <label for="email">Email:
+        <input type="email" name="email" id="email">
+     </label>
+
+     <br><br>
+     
+     <label for="number">Angka:
+        <input type="number" name="number" id="number">
+     </label>
+
+     <br><br>
+
+      <label for="number">Angka:
+        <input type="number" name="number" id="number" min="0" max="100">
+     </label>
+
+     <br><br>
+
+      <label for="number">Angka:
+        <input type="number" name="number" id="number" min="0" max="100" step="5">
+     </label>
+
+     <br><br>
+
+     <label for="tanggal">Tanggal:
+        <input type="date" name="tanggal" id="tanggal" >
+     </label>
+
+     <br><br>
+
+     <label for="warna">Pilih warna:
+        <input type="color" name="warna" id="warna" >
+     </label>
+
+     <br><br>
+     
+     <!-- Tapi kalau bikin button seperti ini, ketika kita klik submit, data belum dikirim ke mana-mana -->
+
+     <button>Submit!</button>
+
+     <br><br>
+
+     <!-- setelah dikasih type submit, ketika kita klik tombol submit, maka data akan dikirim lewat url -->
+
+     <button type="submit">Kirim!</button>      
+
+   </form>       
+        
+</body>
+</html>
