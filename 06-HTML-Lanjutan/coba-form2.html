@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Input Atribut, checkbox & radio</title>
+</head>
+<body>
+
+    <h1>Contoh Input Atribut, checkbox & radio</h1>
+
+    <form>Nama:
+
+        <!-- attribute autofocus hanya boleh dikasih sekali saja di element input yang pertama -->
+
+        <label for="nama"></label>
+        <input type="text" name="nama" id="nama" placeholder="Masukkan nama" autocomplete="off" autofocus required>
+
+        <br>
+
+        <h3>Hobby:</h3>
+
+        <label for="hobby1">
+            <input type="checkbox" name="hobby1" id="hobby1" value="olahraga" checked>
+            Olahraga
+        </label>
+
+        <br><br>
+
+        <label for="hobby2">
+            <input type="checkbox" name="hobby2" id="hobby2" value="ngoding">
+            Ngoding
+        </label>
+
+        <br><br>
+
+        <h3>Jenis Kelamin:</h3>
+
+        <label for="pria">
+            <input type="radio" name="jenis_kelamin" id="pria" value="pria" checked>
+            Pria
+        </label>
+        
+        <br><br>
+
+        <label for="wanita">
+            <input type="radio" name="jenis_kelamin" id="wanita" value="wanita">
+            Wanita
+        </label>
+        
+        <br><br>
+
+         <h3>Jenis Kelamin:</h3>
+
+        <label for="pria">
+            <input type="radio" name="pria" id="pria" value="pria">
+            Pria
+        </label>
+        
+        <br><br>
+
+        <label for="wanita">
+            <input type="radio" name="wanita" id="wanita" value="wanita">
+            Wanita
+        </label>
+        
+        <br><br>
+
+        <button type="submit">Kirim!</button>
+    </form>
+    
+</body>
+</html>
