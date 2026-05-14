@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba CSS - Font Styling</title>
+    <style>  
+       @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+       @font-face {
+        font-family: Lobster;
+        src: url(./fonts/LobsterTwo-Regular.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+       }
+       .font-lobster {
+        font-family: Lobster, arial, sans-serif ;
+       }
+        h1 {
+            color: crimson;
+            font-size: 60px;
+            text-align: center;
+            font-family: "Bitcount Grid Double", sans-serif;
+            font-weight: 300;
+        }
+        p {
+            color: navy;
+            text-align: center;
+            font-size: 30px;
+            font-family: lora, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laudantium facere vitae accusamus deleniti tenetur veniam ducimus voluptatibus magnam! Laudantium.</p>
+    <p class="font-lobster">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio sunt sed fugiat numquam expedita dolore eius distinctio omnis recusandae repudiandae?</p>  
+</body>
+</html>
