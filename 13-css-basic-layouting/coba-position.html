@@ -48,11 +48,11 @@
 
     
     .coba-absolute {
-      position: absolute;
+      /* position: absolute; */
       /* width: inherit; */
       /* height: inherit; */
-      left: 0;
-      top: 0px ;
+      /* left: 0; */
+      /* top: 0px ; */
       /* bottom: 20px; */
       /* left: 20px; */
       /* right: 20px; */
@@ -80,18 +80,48 @@
       position: relative
     }
 
-    .coba-relative {
-        position: relative;
-        top: -50px;
-        left: -100px;     
-    }
-
+   
     .coba-absolute-2 {
         position: absolute;
         top: -50px;
         right: -50px;
         border-radius: 50%;
     } 
+
+    /* .coba-fixed {
+      position: fixed;
+      width: inherit;
+      height: 50px;
+      left: 0;
+      right: 0;
+      top: 0;
+    } */
+
+    /* .coba-sticky {
+      position: sticky;
+      top: 100px;
+    } */
+
+     .coba-relative {
+        position: relative;
+        top: -50px;
+        left: -100px;   
+        
+    }
+
+
+    .coba-fixed {
+      position: fixed
+    }
+
+    .topbar {
+      width: inherit;
+      height: 50px;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
 
    
    
@@ -104,18 +134,18 @@
 
   <h2>1. Position: Static (Normal Flow)</h2>
   <div class="box satu">1</div>
-  <div class="box dua">2</div>
+  <div class="box dua coba-fixed topbar">2</div>
   <div class="box tiga">3</div>
 
 
   <h2>2. Position: Relative</h2>
-  <div class="box satu">1</div>
-  <div class="box dua coba-relative">2</div>
+  <div class="box satu coba-relative">1</div>
+  <div class="box dua">2</div>
   <div class="box tiga">3</div>
 
   <h2>3. Position: Absolute (Relatif ke Body)</h2>
   <div class="box satu">1</div>
-  <div class="box dua coba-absolute">2</div>
+  <div class="box dua">2</div>
   <div class="box tiga">3</div>
 
   <h2>4. Position: Absolute (Relatif ke Parent)</h2>
